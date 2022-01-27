@@ -48,10 +48,6 @@
               "target": "Package",
               "version": "[2.14.1, )"
             },
-            "Newtonsoft.Json.Schema": {
-              "target": "Package",
-              "version": "[3.0.14, )"
-            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
