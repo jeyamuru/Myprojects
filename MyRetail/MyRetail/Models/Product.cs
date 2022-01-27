@@ -1,6 +1,8 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using Newtonsoft.Json;
+using System.ComponentModel.DataAnnotations;
+using System.Text.Json;
 
 namespace MyRetail.Models
 {
@@ -11,11 +13,16 @@ namespace MyRetail.Models
         public Price CurrentPrice { get; set; }
     }
 
-
+ 
     public class Price 
     {
-  [JsonProperty ("Value", Required = Required.Default)]
+        [Range(minimum: 1, maximum: long.MaxValue)]
         public double Value { get; set; }
+        [Required]
+
+        //JSON required Property Mandatory Field Check
+
+        [JsonProperty(Required = Required.Always)]
         public string? Currency { get; set; }
     }
 
