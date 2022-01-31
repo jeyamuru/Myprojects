@@ -47,7 +47,7 @@ https://redsky-uat.perf.target.com/redsky_aggregations/v1/redsky/case_study_v1?k
 ## Mongo DB database and collection##
 
 
-"ConnectionString": "mongodb+srv://myretailrestful:Target123@productprice.ktgcd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+"ConnectionString": "mongodb+srv://myretailrestful:---@productprice.ktgcd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
 "DatabaseName": "ProductDetails",
 "ProductsCollectionName": "ProductPrices"
 
